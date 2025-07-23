@@ -8,12 +8,13 @@
 
 ---
 
-## Integrantes  
+## Integrantes 
+
 | Nombres y Apellidos|
 | Alisson Herrera    | 
 | Francisco Litardo  |
 | Bryan Ponce        | 
-| Martin             |
+| Martin Ortiz       |
 ---
 
 ## 📌 Descripción  
