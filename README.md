@@ -8,13 +8,15 @@
 
 ---
 
-## Integrantes 
+## 👨‍💻 Integrantes del equipo
 
-| Nombres y Apellidos|
-| Alisson Herrera    | 
-| Francisco Litardo  |
-| Bryan Ponce        | 
-| Martin Ortiz       |
+| Nombre Completo       |
+|-----------------------|
+| Alisson Herrera       |
+| Francisco Litardo     |
+| Bryan Ponce           |
+| Martin Ortiz          |
+
 ---
 
 ## 📌 Descripción  
