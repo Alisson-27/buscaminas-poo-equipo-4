@@ -1,5 +1,7 @@
 package modelo;
 
-public class CasillaYaDescubiertaException {
-
+public class CasillaYaDescubiertaException extends Exception {
+    public CasillaYaDescubiertaException(String mensaje) {
+        super(mensaje);
+    }
 }
