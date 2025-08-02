@@ -1,10 +1,10 @@
-package test.modelo;
+package modelo;
 
-import modelo.Casilla;
-import modelo.Mina;
-import modelo.Tablero;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.fail;
+
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class TableroTest {
 
@@ -42,7 +42,7 @@ public class TableroTest {
                 }
             }
         }
-    }
+    } 
 
     @Test
     public void testDescubrirCasillaYaDescubierta() {
@@ -53,4 +53,12 @@ public class TableroTest {
                 tablero.descubrirCasilla(0, 0);
             });
         } catch (Exception e) {
-            fail("No se esperaba excepción al descubrir la primera
+            fail("No se esperaba excepción al descubrir la primera casilla");
+        }
+    } 
+
+    @Override
+    public String toString() {
+        return "TableroTest []";
+    }
+}
