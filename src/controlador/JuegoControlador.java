@@ -3,6 +3,7 @@ package controlador;
 import modelo.Partida;
 import modelo.CasillaYaDescubiertaException;
 import modelo.EntradaInvalidaException;
+import modelo.Tablero;
 import vista.ConsolaVista;
 
 import java.util.Scanner;
@@ -59,7 +60,7 @@ public class JuegoControlador {
 
     private void marcarCasilla(String coord) throws EntradaInvalidaException {
         int[] pos = validarCoordenada(coord);
-        var casilla = partida.getTablero().getCasilla(pos[0], pos[1]);
+        modelo.Casilla casilla = partida.getTablero().getCasilla(pos[0], pos[1]);
         if (casilla.isDescubierta()) {
             throw new EntradaInvalidaException("No puede marcar una casilla ya descubierta");
         }
@@ -71,7 +72,7 @@ public class JuegoControlador {
             throw new EntradaInvalidaException("Formato inválido");
         }
         char letra = Character.toUpperCase(coord.charAt(0));
-        if (letra < 'A' || letra >= ('A' + partida.getTablero().FILAS)) {
+        if (letra < 'A' || letra >= ('A' + Tablero.FILAS)) {
             throw new EntradaInvalidaException("Fila inválida");
         }
         int fila = letra - 'A';
@@ -83,7 +84,7 @@ public class JuegoControlador {
         } catch (NumberFormatException e) {
             throw new EntradaInvalidaException("Columna inválida");
         }
-        if (columna < 0 || columna >= partida.getTablero().COLUMNAS) {
+        if (columna < 0 || columna >= Tablero.COLUMNAS) {
             throw new EntradaInvalidaException("Columna inválida");
         }
         return new int[]{fila, columna};
