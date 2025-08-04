@@ -1,13 +1,13 @@
 
 package modelo;
 
-public class casilla {
+public class Casilla {
     private boolean mina;
     private boolean descubierta;
     private boolean marcada;
     private int minasAlrededor;
 
-    public casilla() {
+    public Casilla() {
         this.mina = false;
         this.descubierta = false;
         this.marcada = false;
