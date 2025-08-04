@@ -52,12 +52,6 @@ buscaminas/
 
 ---
 
-## Pruebas Unitarias
-Se incluyen pruebas para verificar colocación de minas, conteo correcto y manejo de excepciones.
-Ejecutar en Eclipse como JUnit Test en test/modelo/TableroTest.java.
-
----
-
 ## Técnica de Código Limpio Aplicada
 - Principio KISS (Keep It Simple, Stupid).
 - Encapsulamiento estricto.
